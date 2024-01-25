@@ -1,0 +1,44 @@
+﻿<Window x:Class="ААААААААА_ОВОЩИ.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ААААААААА_ОВОЩИ"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="900">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" HorizontalAlignment="Left" Margin="10">
+            <Button Width="300" Height="30" Margin="2" Content="Вся информация" Click="VceCkick"/>
+            <Button Width="300" Height="30" Margin="2" Content="Все названия" Click="NameClick"/>
+            <Button Width="300" Height="30" Margin="2" Content="Все цвета" Click="ColorClick"/>
+            <Button Width="300" Height="30" Margin="2" Content="Максимальную калорийность" Click="MaxColClick"/>
+            <Button Width="300" Height="30" Margin="2" Content="Минемальную калорийность" Click="MinColClick"/>
+            <Button Width="300" Height="30" Margin="2" Content="Среднюю калорийность" Click="CredColClick"/>
+        </StackPanel>
+        <StackPanel Grid.Row="0" HorizontalAlignment="Right" Margin="10">
+            <Button Width="330" Height="30" Margin="2" Content=" количество овощей" Click="ColOvClick"/>
+            <Button Width="330" Height="30" Margin="2" Content=" количество фруктов" Click="ColFruClick"/>
+            <Button Width="330" Height="30" Margin="2" Content=" количество овощей и фруктов заданного цвета" Click="OvFruZadCvetClick"/>
+            <TextBox Name="ZADCVET"/>
+            <Button Width="330" Height="30" Margin="2" Content="количество овощей фруктов каждого цвета" Click="KagCvet"/>
+            <Button Width="330" Height="30" Margin="2" Content="овощи и фрукты с калорийностью ниже указанной" Click="NegeClick"/>
+            <TextBox Name="Nige"/>
+            <Button Width="330" Height="30" Margin="2" Content="овощи и фрукты с калорийностью выше указанной"/>
+            <TextBox Name="Vishe"/>
+            <Button Width="330" Height="30" Margin="2" Content="овощи и фрукты с калорийностью в указанном диапазоне"/>
+            <TextBox Name="Nach"/>
+            <TextBox Name="Kon"/>
+            <Button Width="330" Height="30" Margin="2" Content="все овощи и фрукты, у которых цвет желтый или красный"/>
+        </StackPanel>
+        <TextBlock Grid.Row="1" Text="Вывод" Name="Vivod"/>
+        <StackPanel Grid.Row="0" HorizontalAlignment="Center" Margin="10">
+            <Button Width="200" Height="30" Margin="2" Content="Подключить БД" Click="OnClick"/>
+            <Button Width="200" Height="30" Margin="2" Content="Отключить БД" Click="OffClick"/>
+            <TextBlock HorizontalAlignment="Center" Text="БД отключена" Name="Text"/>
+        </StackPanel>
+    </Grid>
+</Window>
